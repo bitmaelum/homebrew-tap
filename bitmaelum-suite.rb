@@ -2,21 +2,21 @@
 class BitmaelumSuite < Formula
   desc "BitMaelum is an end-to-end email alternative"
   homepage "https://bitmaelum.com/"
-  version "0.0.21"
+  version "0.0.22"
   license "MIT"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/bitmaelum/bitmaelum-suite/releases/download/v0.0.21/bitmaelum-suite_0.0.21_darwin_x86_64.tar.gz"
-    sha256 "2239b8e7975f999f3b4bb76cc94ba5f5b318ab7ad5dc5f4843cceaa743b8c449"
+    url "https://github.com/bitmaelum/bitmaelum-suite/releases/download/v0.0.22/bitmaelum-suite_0.0.22_darwin_x86_64.tar.gz"
+    sha256 "f6e0ae0294aae47114662d93421d62a83d06947848e75763b4d3b707fbbf9157"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/bitmaelum/bitmaelum-suite/releases/download/v0.0.21/bitmaelum-suite_0.0.21_linux_x86_64.tar.gz"
-    sha256 "a8769dde21205a21da9fd69c0009d7e827c8c786aa52776d0251b065d8f16e7f"
+    url "https://github.com/bitmaelum/bitmaelum-suite/releases/download/v0.0.22/bitmaelum-suite_0.0.22_linux_x86_64.tar.gz"
+    sha256 "ec6b90f795fbac2290a6110bd0ee26b5b96804fd1c23d0e6831f52478588eda3"
   end
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/bitmaelum/bitmaelum-suite/releases/download/v0.0.21/bitmaelum-suite_0.0.21_linux_arm64.tar.gz"
-    sha256 "ed5b4611356ed9677c8565ae4015500e68ba9ec46fb0d1f85f95fc7aaf79e707"
+    url "https://github.com/bitmaelum/bitmaelum-suite/releases/download/v0.0.22/bitmaelum-suite_0.0.22_linux_arm64.tar.gz"
+    sha256 "519ced1224065ee72ba1c52f7935063780572eef12bc0b04688560895412ce82"
   end
 
   def install
